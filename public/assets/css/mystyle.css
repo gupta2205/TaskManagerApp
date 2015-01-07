@@ -1,0 +1,4 @@
+.error { color: red; font-size: .8em; font-style: italic; }
+li img { margin-right: 1em; }
+.completed { background: #D8D8D8; }
+.task-update-form { position: absolute; top: 1em; right: 1em; }
