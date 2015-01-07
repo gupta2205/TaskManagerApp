@@ -51,18 +51,18 @@ return array(
 			'database' => __DIR__.'/../database/production.sqlite',
 			'prefix'   => '',
 		),
-
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'forge',
-			'username'  => 'forge',
-			'password'  => '',
+			'host'      => getenv('MG_DB_HOST'),
+			'database'  => getenv('MG_DB_NAME'),
+			'username'  => getenv('MG_DB_USER'),
+			'password'  => getenv('MG_DB_PASSWORD'),
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
 		),
 
+		
 		'pgsql' => array(
 			'driver'   => 'pgsql',
 			'host'     => 'localhost',
